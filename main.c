@@ -14,7 +14,7 @@ void print_bitstring (int value) {
 
     // NOTE: Iterate through all the bits in the number starting at the left to
     //       display it in the byte style
-    for (int index = 0; index <= NUMBER_OF_CHARACTERS; index++) {
+    for (int index = 0; index <= NUMBER_OF_CHARACTERS-1; index++) {
 
         // NOTE: Determine if the bit is a 0 or 1
         if ((value >> index) & 1) {
@@ -23,7 +23,7 @@ void print_bitstring (int value) {
             putchar(toupper(characters[index]));
         };
     };
-    putchar('\n');
+    printf("\n");
 };
 
 
